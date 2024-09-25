@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Calc.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="result">  
+        </div>
+        <div class="buttons">
+            <div class="row-1">
+                <button class="btn-1" onclick="handleClear()" data-key="c">Clear</button>
+                <button class="btn-1" onclick="handleDelete()" data-key="Backspace">Delete</button>
+            </div>
+            <div class="row-2">
+                <button class="btn-2 number" value="7" data-key="7">7</button>
+                <button class="btn-2 number" value="8" data-key="8">8</button>
+                <button class="btn-2 number" value="9" data-key="9">9</button>
+                <button class="btn-2 operator" value="/" data-key="/">÷</button>
+            </div>
+            <div class="row-3">
+                <button class="btn-3 number" value="4" data-key="4">4</button>
+                <button class="btn-3 number" value="5" data-key="5">5</button>
+                <button class="btn-3 number" value="6" data-key="6">6</button>
+                <button class="btn-3 operator" value="*" data-key="*">x</button>
+            </div>
+            <div class="row-4">
+                <button class="btn-4 number" value="1" data-key="1">1</button>
+                <button class="btn-4 number" value="2" data-key="2">2</button>
+                <button class="btn-4 number" value="3" data-key="3">3</button>
+                <button class="btn-4 operator" value="-" data-key="-">-</button>
+            </div>
+            <div class="row-5">
+                <button class="btn-5 number" value="." data-key=".">.</button>
+                <button class="btn-5 number" value="0" data-key="0">0</button>
+                <button class="btn-5 equal" onclick='handleClickEqual()' data-key="Enter">=</button>
+                <button class="btn-5 operator" value="+" data-key="+">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
